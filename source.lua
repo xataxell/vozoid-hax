@@ -1126,6 +1126,22 @@ local themes = {
         ["Object Border"] = Color3.fromRGB(35, 35, 39),
         ["Dropdown Option Background"] = Color3.fromRGB(19, 19, 23)
     }
+
+    Gamesense = {
+        ["Accent"] = Color3.fromRGB(127, 163, 21),
+        ["Window Background"] = Color3.fromRGB(30, 30, 36),
+        ["Window Border"] = Color3.fromRGB(45, 45, 49),
+        ["Tab Background"] = Color3.fromRGB(20, 20, 24),
+        ["Tab Border"] = Color3.fromRGB(45, 45, 55),
+        ["Tab Toggle Background"] = Color3.fromRGB(28, 28, 32),
+        ["Section Background"] = Color3.fromRGB(18, 18, 22),
+        ["Section Border"] = Color3.fromRGB(35, 35, 45),
+        ["Text"] = Color3.fromRGB(180, 180, 190),
+        ["Disabled Text"] = Color3.fromRGB(100, 100, 110),
+        ["Object Background"] = Color3.fromRGB(25, 25, 29),
+        ["Object Border"] = Color3.fromRGB(35, 35, 39),
+        ["Dropdown Option Background"] = Color3.fromRGB(19, 19, 23)
+    }
 }
 
 local themeobjects = {}
@@ -1371,7 +1387,7 @@ function library:SetTheme(theme)
 end
 
 function library:GetThemes()
-    local themes = {"Default", "Midnight"}
+    local themes = {"Default", "Midnight", 'Gamesense'}
 
     local folderpath = string.format("%s//themes", self.folder)
 
