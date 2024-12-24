@@ -106,7 +106,7 @@ local leftsection_toggle_colorpicker_1 = toggle:ColorPicker{
     Default = Color3.fromRGB(255, 0, 0), 
     Flag = 'leftsection_toggle_colorpicker1', 
     Callback = function(color)
-        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. math.round(color.G * 255) .. math.round(color.B * 255) .. (math.round(color.A * 100) / 100)) -- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
+        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. ' ' .. math.round(color.G * 255) .. ' ' .. math.round(color.B * 255) .. ' ' .. (math.round(color.A * 100) / 100)) -- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
     end
 }
 ```
@@ -115,7 +115,7 @@ local leftsection_toggle_colorpicker_2 = toggle:ColorPicker{
     Default = Color3.fromRGB(0, 255, 0), 
     Flag = 'leftsection_toggle_colorpicker2', 
     Callback = function(color)
-        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. math.round(color.G * 255) .. math.round(color.B * 255) .. (math.round(color.A * 100) / 100)) -- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
+        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. ' ' .. math.round(color.G * 255) .. ' ' .. math.round(color.B * 255) .. ' ' .. (math.round(color.A * 100) / 100))-- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
     end
 }
 ```
@@ -124,7 +124,7 @@ local leftsection_toggle_colorpicker_3 = toggle:ColorPicker{
     Default = Color3.fromRGB(0, 0, 255), 
     Flag = 'leftsection_toggle_colorpicker3', 
     Callback = function(color)
-        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. math.round(color.G * 255) .. math.round(color.B * 255) .. (math.round(color.A * 100) / 100)) -- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
+        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. ' ' .. math.round(color.G * 255) .. ' ' .. math.round(color.B * 255) .. ' ' .. (math.round(color.A * 100) / 100)) -- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
     end
 }
 ```
