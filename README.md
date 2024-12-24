@@ -9,7 +9,7 @@ ui library thing
 ```lua
 local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/xataxell/vozoid-hax/refs/heads/main/source.lua'))()
 ```
-<!-- This content will not appear in the rendered Markdown -->
+‭
 > Creating, setting and toggling the visibility a watermark
 ```lua
 local watermark = library:Watermark('vozoid hax | private dev build | v1.0.0 | 240 fps | 15 ms')
@@ -20,7 +20,7 @@ watermark:Set('updated watermark')
 ```lua
 watermark:Hide()
 ```
-
+‭
 > Creating the main UI
 ```lua
 local main = library:Load{
@@ -32,7 +32,7 @@ local main = library:Load{
     Folder = 'vozoid hax' -- config folder name
 }
 ```
-
+‭
 > Tab creation
 ```lua
 local tab1 = main:Tab('Tab 1')
