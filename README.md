@@ -38,7 +38,7 @@ local main = library:Load{
 local tab1 = main:Tab('Tab 1')
 local tab2 = main:Tab('Tab 2')
 ```
-
+‭
 > Sections
 ```lua
 local leftsection = tab1:Section{
@@ -48,5 +48,49 @@ local leftsection = tab1:Section{
 local rightsection = tab2:Section{
     Name = 'right section',
     Side = 'Right'
+}
+```
+‭
+> Labels
+```lua
+local label = leftsection:Label('label for left section')
+```
+‭‭
+> Buttons
+```lua
+leftsection:Button{
+    Name = 'button for left section',
+    Callback  = function()
+        print('the button in the left section has been clicked')
+    end
+}
+```
+‭
+> Seperators
+```lua
+local seperator = leftsection:Separator('seperator')
+```
+```lua
+seperator:Set('seperator for left section')
+```
+‭
+> Toggles
+```lua
+local toggle = leftsection:Toggle{
+    Name = 'toggle for left section',
+    Flag = 'leftsection_toggle', -- flag can be literally anything, it just has to be a string
+    Default = false,
+    Callback  = function(boolean)
+        print('toggle for left section has a value of ' .. boolean)
+    end
+}
+```
+```lua
+local leftsection_toggle_colorpicker_1 = toggle:ColorPicker{
+    Default = Color3.fromRGB(255, 0, 0), 
+    Flag = "Toggle 1 Picker 1", 
+    Callback = function(color)
+        print('left section toggle colorpicker color is now ' .. (math.round(color.R * 255)) .. math.round(color.G * 255) .. math.round(color.B * 255) .. (math.round(color.A * 100) / 100)) -- color units changed from max 0-1 to max 0-255 and then rounded the alpha (transparency) to the alpha times 100 and then divided so its a smooth number with a max of 2 decimal places
+    end
 }
 ```
