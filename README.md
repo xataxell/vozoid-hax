@@ -157,3 +157,5 @@ leftsection:Slider{
         print("Toggle 3 Slider 1 is now " .. value)
     end
 ```
+‭
+> More documentation soon (hopefully), im too lazy to finish this right now
