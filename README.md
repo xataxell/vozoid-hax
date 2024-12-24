@@ -27,7 +27,7 @@ local main = library:Load{
     Name = 'vozoid hax',
     SizeX = 600,
     SizeY = 650,
-    Theme = 'Midnight', -- 2nd theme (built-in themes: Defalt, Midnight)
+    Theme = 'Midnight', -- 2nd theme (built-in themes: Defalt, Midnight, Gamesense)
     Extension = 'json', -- config file extension
     Folder = 'vozoid hax' -- config folder name
 }
