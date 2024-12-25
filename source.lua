@@ -2929,7 +2929,7 @@ function library:Load(options)
 
     local windowtypes = utility.table({tabtoggles = {}, tabtoggleoutlines = {}, tabs = {}, tabtoggletitles = {}, count = 0}, true)
 
-    function windowtypes:Tab(name)
+    function windowtypes:Tab(name, visible)
         local tabtoggle = utility.create("Square", {
             Filled = true,
             Thickness = 0,
@@ -3031,7 +3031,7 @@ function library:Load(options)
                 end 
             end
 
-            tab.Visible = true
+            tab.Visible = visible or false
             utility.changeobjecttheme(title, "Text")
             utility.changeobjecttheme(tabtoggle, "Tab Toggle Background")
             tabtoggle.Color = mouseover and utility.changecolor(library.theme["Tab Toggle Background"], 3) or utility.changecolor(library.theme["Tab Background"], 3)
