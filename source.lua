@@ -3412,7 +3412,7 @@ function library:Load(options)
                     return library.createkeybind(default, holder, blacklist, flag, mode == "toggle" and newcallback or callback, -2)
                 end
 
-                function toggletypes:Slider(options, number)
+                function toggletypes:Slider(options)
                     utility.table(options)
 
                     local min = options.min or options.minimum or 0
@@ -3424,7 +3424,7 @@ function library:Load(options)
                     local callback = options.callback or function() end
 
                     holder.Size = UDim2.new(1, 0, 0, 28)
-                    section.Size = UDim2.new(1, 0, 0, (sectioncontent.AbsoluteContentSize + 28) * number)
+                    section.Size = UDim2.new(1, 0, 0, sectioncontent.AbsoluteContentSize + 28)
 
                     return library.createslider(min, max, holder, text, default, float, flag, callback)
                 end
@@ -3605,7 +3605,7 @@ function library:Load(options)
                     Text = name,
                     Font = Drawing.Fonts.Plex,
                     Size = 13,
-                    Position = UDim2.new(0, 0, 0, -2),
+                    Position = UDim2.new(0, 0, 0, 2),
                     Theme = "Text",
                     ZIndex = 7,
                     Outline = true,
