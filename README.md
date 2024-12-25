@@ -18,7 +18,7 @@ local watermark = library:Watermark('vozoid hax | private dev build | v1.0.0 | 2
 watermark:Set('updated watermark')
 ```
 ```lua
-watermark:Hide()
+watermark:Toggle(true) -- Makes it visible, change it to false to make it invisible (hide it)
 ```
 ‭
 > Creating the main UI
