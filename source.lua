@@ -2035,7 +2035,7 @@ function library.createslider(min, max, parent, text, default, float, flag, call
         Thickness = 0,
         Theme = "Object Background",
         Size = UDim2.new(1, 0, 0, 10),
-        Position = UDim2.new(0, 0, 1, -10),
+        Position = UDim2.new(0, 0, 1, 0),
         ZIndex = 7,
         Parent = parent
     })
@@ -3605,7 +3605,7 @@ function library:Load(options)
                     Text = name,
                     Font = Drawing.Fonts.Plex,
                     Size = 13,
-                    Position = UDim2.new(0, 0, 0, -10),
+                    Position = UDim2.new(0, 0, 0, -2),
                     Theme = "Text",
                     ZIndex = 7,
                     Outline = true,
