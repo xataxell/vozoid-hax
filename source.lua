@@ -3605,7 +3605,7 @@ function library:Load(options)
                     Text = name,
                     Font = Drawing.Fonts.Plex,
                     Size = 13,
-                    Position = UDim2.new(0, 0, 0, 2),
+                    Position = UDim2.new(0, 0, 0, -10),
                     Theme = "Text",
                     ZIndex = 7,
                     Outline = true,
