@@ -35,8 +35,8 @@ local main = library:Load{
 ‭
 > Tab creation
 ```lua
-local tab1 = main:Tab('Tab 1', true) -- the second argument is for making the tab visible, if you dont include it then it will automatically not be visible
-local tab2 = main:Tab('Tab 2', false)
+local tab1 = main:Tab('Tab 1')
+local tab2 = main:Tab('Tab 2')
 ```
 ‭
 > Sections
