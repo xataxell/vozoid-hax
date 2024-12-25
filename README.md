@@ -82,7 +82,7 @@ toggle:Keybind{params}
 toggle:Slider{params}
 ```
 ‭
-> Toggles
+> Toggles & Connected Colorpickers & Connected Keybinds
 ```lua
 local toggle = leftsection:Toggle{
     Name = 'toggle for left section',
@@ -152,10 +152,63 @@ leftsection:Slider{
     Min = 0,
     Max = 5,
     Float = 0.5, -- increment
-    Flag = '',
+    Flag = 'lefsection_slider',
     Callback = function(value)
         print("Toggle 3 Slider 1 is now " .. value)
     end
 ```
 ‭
-> More documentation soon (hopefully), im too lazy to finish this right now
+> Dropdowns
+```lua
+local singledropdown = leftsection:Dropdown{
+    Name = 'Single Dropdown',
+    Default = 'Option 1', -- string
+    Content = {'Option 1', 'Option 2', 'Option 3'},
+    Flag = 'singledropdown',
+    Callback = function(option)
+        print('single dropdown selection: ' .. tostring(option))
+    end
+}
+```
+```lua
+local multidropdown = leftsection:Dropdown{
+    Name = 'Multi Dropdown',
+    Default = {'Option 1', 'Option 2'}, -- table with strings
+    Max = 3, -- this makes it a multi dropdown
+    Content = {'Option 1', 'Option 2', 'Option 3'},
+    Flag = 'multidropdown',
+    Callback = function(option)
+        print('multi dropdown selection: ' .. table.concat(option, ', '))
+    end
+}
+```
+```lua
+local scrollabledropdown = leftsection:Dropdown{
+    Name = 'Scrollable Dropdown',
+    Default = 'Option 1', -- string
+    Scrollable = true, -- Makes it scrollable
+    ScrollingMax = 3, -- caps the amount of options it contains before scrolling
+    Content = {'Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5', 'Option 6', 'Option 7', 'Option 8', 'Option 9', 'Option 10'},
+    Flag = 'scrollabledropdown',
+    Callback = function(option)
+        print('scrollable dropdown selection: ' .. tostring(option))
+    end
+}
+```
+```lua
+singledropdown:Set('Option 2') -- sets the selected option in the single dropdown to Option 2
+singledropdown:Set() -- entering no arguments or the wrong arguments will cause the dropdown to be unset (which means nothing will be selected)
+```
+```lua
+singledropdown:Refresh{'New option 1', 'New option 2', 'New option 3'} -- sets the new content for the dropdown
+```
+```lua
+singledropdown:Add('Option 4') -- Adds to the content
+singledropdown:Remove('Option 4') -- Removes from the content
+```
+```lua
+multidropdown:Set('Option 2') -- sets the selected option in the single dropdown to Option 2
+multidropdown:Set{'Option 1', 'Option 2'} -- sets the selected option in the single dropdown to Option 2
+multidropdown:Set() -- entering no arguments or the wrong arguments will cause the dropdown to be unset (which means nothing will be selected)
+multidropdown:Set{} -- entering no arguments or the wrong arguments will cause the dropdown to be unset (which means nothing will be selected)
+```
