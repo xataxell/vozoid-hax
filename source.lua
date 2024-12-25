@@ -2974,7 +2974,7 @@ function library:Load(options)
 
         task.spawn(function()
             task.wait()
-            tab.Visible = false
+            tab.Visible = tab.Visible
         end)
         
         local column1 = utility.create("Square", {
