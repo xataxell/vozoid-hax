@@ -2759,11 +2759,8 @@ function library:Watermark(str)
 
     local watermarktypes = utility.table({}, true)
 
-    local open = true
-
-    function watermarktypes:Hide()
-        open = not open
-        watermark.Visible = open
+    function watermarktypes:Toggle(bool)
+        watermark.Visible = bool
     end
 
     function watermarktypes:Set(str)
