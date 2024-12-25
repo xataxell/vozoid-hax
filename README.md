@@ -207,8 +207,8 @@ singledropdown:Add('Option 4') -- Adds to the content
 singledropdown:Remove('Option 4') -- Removes from the content
 ```
 ```lua
-multidropdown:Set('Option 2') -- sets the selected option in the single dropdown to Option 2
-multidropdown:Set{'Option 1', 'Option 2'} -- sets the selected option in the single dropdown to Option 2
+multidropdown:Set('Option 2') -- sets the selected option in the multi dropdown to Option 2
+multidropdown:Set{'Option 1', 'Option 2'} -- sets the selected options in the multi dropdown to Option 1 and Option 2
 multidropdown:Set() -- entering no arguments or the wrong arguments will cause the dropdown to be unset (which means nothing will be selected)
 multidropdown:Set{} -- entering no arguments or the wrong arguments will cause the dropdown to be unset (which means nothing will be selected)
 ```
