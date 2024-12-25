@@ -75,7 +75,7 @@ seperator:Set('seperator for left section')
 ```
 ‭
 > [!TIP]
-> Certain elements such as keybinds, colorpickers, sliders and maybe more can be connected to other elements such as toggles, example below:
+> Certain elements such as keybinds, colorpickers, sliders and more can be connected to other elements such as toggles, example below:
 ```lua
 toggle:ColorPicker{params}
 toggle:Keybind{params}
