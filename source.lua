@@ -1129,18 +1129,18 @@ local themes = {
 
     Gamesense = {
         ["Accent"] = Color3.fromRGB(127, 163, 21),
-        ["Window Background"] = Color3.fromRGB(30, 30, 30),
-        ["Window Border"] = Color3.fromRGB(45, 45, 45),
-        ["Tab Background"] = Color3.fromRGB(20, 20, 20),
-        ["Tab Border"] = Color3.fromRGB(45, 45, 45),
-        ["Tab Toggle Background"] = Color3.fromRGB(28, 28, 28),
-        ["Section Background"] = Color3.fromRGB(18, 18, 18),
-        ["Section Border"] = Color3.fromRGB(35, 35, 35),
+        ["Window Background"] = Color3.fromRGB(40, 40, 40),
+        ["Window Border"] = Color3.fromRGB(10, 10, 10),
+        ["Tab Background"] = Color3.fromRGB(21, 21, 21),
+        ["Tab Border"] = Color3.fromRGB(60, 60, 60),
+        ["Tab Toggle Background"] = Color3.fromRGB(21, 21, 21),
+        ["Section Background"] = Color3.fromRGB(17, 17, 17),
+        ["Section Border"] = Color3.fromRGB(48, 48, 48),
         ["Text"] = Color3.fromRGB(200, 200, 200),
         ["Disabled Text"] = Color3.fromRGB(110, 110, 110),
-        ["Object Background"] = Color3.fromRGB(25, 25, 25),
-        ["Object Border"] = Color3.fromRGB(35, 35, 35),
-        ["Dropdown Option Background"] = Color3.fromRGB(19, 19, 19)
+        ["Object Background"] = Color3.fromRGB(33, 33, 33),
+        ["Object Border"] = Color3.fromRGB(10, 10, 10),
+        ["Dropdown Option Background"] = Color3.fromRGB(50, 50, 50)
     }
 }
 
