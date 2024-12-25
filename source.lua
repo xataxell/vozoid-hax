@@ -2765,9 +2765,9 @@ function library:Watermark(str)
 
     function watermarktypes:SetPosition(X, Y)
         local ScreenSize = game:GetService('Workspace').CurrentCamera.ViewportSize
-        local X = math.clamp((X / 100) * (ScreenSize.X - watermark.Size.X.Offset), 0, ScreenSize.X - watermarkSize.X.Offset)
-        local Y = math.clamp((Y / 100) * (ScreenSize.Y - watermark.Size.Y.Offset), 0, ScreenSize.Y - watermark.Size.Y.Offset)
-        watermark.Position = UDim2.new(0, X, 0, Y)
+        local x = math.clamp((X / 100) * (ScreenSize.X - watermark.Size.X.Offset), 0, ScreenSize.X - watermarkSize.X.Offset)
+        local y = math.clamp((Y / 100) * (ScreenSize.Y - watermark.Size.Y.Offset), 0, ScreenSize.Y - watermark.Size.Y.Offset)
+        watermark.Position = UDim2.new(0, x, 0, y)
     end
 
     function watermarktypes:Set(str)
