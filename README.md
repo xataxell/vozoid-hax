@@ -55,6 +55,9 @@ local rightsection = tab2:Section{
 ```lua
 local label = leftsection:Label('label for left section')
 ```
+```lua
+label:Set('label')
+```
 ‭‭
 > Buttons
 ```lua
