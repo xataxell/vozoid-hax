@@ -2035,7 +2035,7 @@ function library.createslider(min, max, parent, text, default, float, flag, call
         Thickness = 0,
         Theme = "Object Background",
         Size = UDim2.new(1, 0, 0, 10),
-        Position = UDim2.new(0, 0, 1, -20),
+        Position = UDim2.new(0, 0, 1, -30),
         ZIndex = 7,
         Parent = parent
     })
@@ -3423,8 +3423,8 @@ function library:Load(options)
                     local flag = options.flag or utility.nextflag()
                     local callback = options.callback or function() end
 
-                    holder.Size = UDim2.new(1, 0, 0, 38)
-                    section.Size = UDim2.new(1, 0, 0, sectioncontent.AbsoluteContentSize + 38)
+                    holder.Size = UDim2.new(1, 0, 0, 18)
+                    section.Size = UDim2.new(1, 0, 0, sectioncontent.AbsoluteContentSize + 18)
 
                     return library.createslider(min, max, holder, text, default, float, flag, callback)
                 end
