@@ -3423,8 +3423,8 @@ function library:Load(options)
                     local flag = options.flag or utility.nextflag()
                     local callback = options.callback or function() end
 
-                    holder.Size = UDim2.new(1, 0, 0, 18)
-                    section.Size = UDim2.new(1, 0, 0, sectioncontent.AbsoluteContentSize + 18)
+                    holder.Size = UDim2.new(1, 0, 0, 8)
+                    section.Size = UDim2.new(1, 0, 0, sectioncontent.AbsoluteContentSize + 8)
 
                     return library.createslider(min, max, holder, text, default, float, flag, callback)
                 end
