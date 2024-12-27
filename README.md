@@ -1,5 +1,5 @@
 # vozoid hax
-ui library thing
+this ui library has a few names, two of which are Venus and Void
 
 # Documentation
 > [!NOTE]
