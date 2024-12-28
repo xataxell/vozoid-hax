@@ -2858,6 +2858,7 @@ function library:Load(options)
         Theme = "Text",
         ZIndex = 4,
         Outline = true,
+        RichText = true,
         Parent = holder,
     })
 
